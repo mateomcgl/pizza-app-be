@@ -1,5 +1,5 @@
 {
-  "name": "ts-graphql-starter",
+  "name": "pizza-app-be",
   "version": "1.0.0",
   "description": "A GraphQL API starter using NodeJS, TypeScript and Apollo Server",
   "main": "index.js",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Rieranthony/ts-graphql-starter.git"
+    "url": "git+https://github.com/mateomcgl/pizza-app-be.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Rieranthony/ts-graphql-starter/issues"
+    "url": "https://github.com/mateomcgl/pizza-app-be/issues"
   },
-  "homepage": "https://github.com/Rieranthony/ts-graphql-starter#readme",
+  "homepage": "https://github.com/mateomcgl/pizza-app-be#readme",
   "devDependencies": {
     "@shelf/jest-mongodb": "^1.1.5",
     "@types/helmet": "0.0.46",
