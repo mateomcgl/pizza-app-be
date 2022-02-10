@@ -3,7 +3,8 @@ import { Service } from "typedi";
 import { Types } from "mongoose";
 
 import { PizzaOrder } from "../../entities";
-import PizzaOrderService from "./service"; "./service";
+import PizzaOrderService from "./service";
+("./service");
 
 /*
   IMPORTANT: Your business logic must be in the service!
@@ -16,10 +17,7 @@ export default class PizzaOrderResolver {
 
   @Query((returns) => PizzaOrder)
   async getPizzaOrder() {
-
     const pizzaOrder = await this.pizzaOrderService.getPizzaOrder();
-    console.log(pizzaOrder)
     return pizzaOrder;
   }
-
 }

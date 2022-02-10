@@ -14,7 +14,7 @@ class Size {
 }
 
 @ObjectType()
-@modelOptions({ schemaOptions: { collection: 'pizza_order' } })
+@modelOptions({ schemaOptions: { collection: "pizza_order" } })
 export class PizzaOrder {
   @prop()
   @Field((type) => ID)
@@ -35,24 +35,20 @@ export class PizzaOrder {
   @prop({ type: () => [String] })
   @Field((type) => [String])
   toppings!: boolean;
-  
+
   @prop({ type: () => [String] })
   @Field((type) => [String])
   drinks!: string[];
-
 
   @prop({ type: () => [String] })
   @Field((type) => [String])
   salads!: string[];
 
-  
   @prop({ type: () => [String] })
   @Field((type) => [String])
   appetizers!: string[];
 
-
   @prop({ type: () => [String] })
   @Field((type) => [String])
   desserts!: string[];
-
 }

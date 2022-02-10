@@ -9,7 +9,6 @@ export default class PizzaOrderService {
   constructor(private readonly pizzaOrderModel: PizzaOrderModel) {}
 
   public async getPizzaOrder(): Promise<PizzaOrder | null> {
-    return this.pizzaOrderModel.getOrder()
+    return this.pizzaOrderModel.getOrder();
   }
-
 }

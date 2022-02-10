@@ -6,7 +6,6 @@ import { NewTodoInput } from "./input";
 
 // This generates the mongoose model for us
 export const TodoMongooseModel = getModelForClass(Todo);
-console.log(Todo)
 export default class TodoModel {
   async getById(_id: Types.ObjectId): Promise<Todo | null> {
     // Use mongoose as usual
