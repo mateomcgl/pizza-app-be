@@ -1,5 +1,5 @@
 import { Service } from "typedi";
-import { ObjectId } from "mongodb";
+import { Types } from "mongoose";
 
 import TodoModel from "./model";
 import { Todo } from "../../entities";
@@ -9,7 +9,7 @@ import { NewTodoInput } from "./input";
 export default class TodoService {
   constructor(private readonly todoModel: TodoModel) {}
 
-  public async getById(_id: ObjectId): Promise<Todo | null> {
+  public async getById(_id: Types.ObjectId): Promise<Todo | null> {
     return this.todoModel.getById(_id);
   }
 

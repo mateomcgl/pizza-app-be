@@ -1,6 +1,6 @@
 import { Resolver, Arg, Query, Mutation, ID } from "type-graphql";
 import { Service } from "typedi";
-import { ObjectId } from "mongodb";
+import { Types } from "mongoose";
 
 import { Todo } from "../../entities";
 import TodoService from "./service";
@@ -16,7 +16,7 @@ export default class TodoResolver {
   constructor(private readonly todoService: TodoService) {}
 
   @Query((returns) => Todo)
-  async getTodo(@Arg("id") id: ObjectId) {
+  async getTodo(@Arg("id") id: Types.ObjectId) {
     const todo = await this.todoService.getById(id);
 
     return todo;

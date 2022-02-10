@@ -4,7 +4,7 @@
   "description": "A GraphQL API starter using NodeJS, TypeScript and Apollo Server",
   "main": "index.js",
   "scripts": {
-    "start:dev": "ts-node-dev --respawn --transpileOnly ./src/index.ts",
+    "start:dev": "ts-node-dev --respawn --transpile-only ./src/index.ts",
     "build": "rimraf ./build && tsc",
     "start": "npm run build && node ./build/index.js",
     "test": "jest --watch",
@@ -34,8 +34,7 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "@typegoose/typegoose": "^7.0.0",
-    "@types/mongoose": "^5.7.16",
+    "@typegoose/typegoose": "^9.6.2",
     "apollo-server-express": "^2.13.0",
     "body-parser": "^1.19.0",
     "class-validator": "^0.13.2",
@@ -44,7 +43,7 @@
     "express": "^4.17.1",
     "graphql": "^15.0.0",
     "helmet": "^3.22.0",
-    "mongoose": "^5.9.13",
+    "mongoose": "^6.2.1",
     "reflect-metadata": "^0.1.13",
     "type-graphql": "^1.0.0-rc.1",
     "typedi": "^0.8.0"

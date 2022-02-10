@@ -1,5 +1,5 @@
 import Container from "typedi";
-import { ObjectId } from "mongodb";
+import { Types } from "mongoose";
 import { buildSchema as typeGraphqlBuildSchema } from "type-graphql";
 
 import { resolvers } from "../modules";
@@ -11,5 +11,5 @@ export const buildSchema = () =>
   typeGraphqlBuildSchema({
     resolvers,
     container: Container,
-    scalarsMap: [{ type: ObjectId, scalar: ObjectIdScalar }],
+    scalarsMap: [{ type: Types.ObjectId, scalar: ObjectIdScalar }],
   });

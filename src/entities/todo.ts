@@ -1,11 +1,11 @@
-import { ObjectType, Field } from "type-graphql";
+import { ObjectType, Field, ID } from "type-graphql";
 import { prop } from "@typegoose/typegoose";
-import { ObjectId } from "mongodb";
+import { Types } from "mongoose";
 
 @ObjectType()
 export class Todo {
-  @Field()
-  readonly _id!: ObjectId;
+  @Field(() => ID)
+  readonly _id!: Types.ObjectId;
 
   @prop()
   @Field(() => Date)
